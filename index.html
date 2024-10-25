@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital + Analog Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock-title">
+      <h1>
+        <span class="td">Diginal </span>
+        <span class="tc">Clock</span>
+        <span class="ta">Animation</span>
+      </h1>
+    </div>
+    <div class="clock-container">
+      <div class="clock-dial">
+        <div class="circle hours-circle" id="hours-circle">
+          <div class="dot" id="hours-dot"></div>
+          <div class="time" id="hours">12</div>
+          <div class="label">Hours</div>
+        </div>
+      </div>
+      <div class="clock-dial">
+        <div class="circle minutes-circle" id="minutes-circle">
+          <div class="dot" id="minutes-dot"></div>
+          <div class="time" id="minutes">13</div>
+          <div class="label">Minutes</div>
+        </div>
+      </div>
+      <div class="clock-dial">
+        <div class="circle seconds-circle" id="seconds-circle">
+          <div class="dot" id="seconds-dot"></div>
+          <div class="time" id="seconds">00</div>
+          <div class="label">Seconds</div>
+        </div>
+      </div>
+      <div class="period" id="period">PM</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
