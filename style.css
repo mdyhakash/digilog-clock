@@ -58,16 +58,16 @@ body {
 
 .hours-circle {
   /* border-color: #ff2972; */
-  border-color: #fff;
+  border-color: #444;
 }
 
 .minutes-circle {
-  border-color: #fee800;
+  border-color: #444;
 }
 
 .seconds-circle {
   /* border-color: #04fc43; */
-  border-color: #fff;
+  border-color: #444;
 }
 
 .time {
