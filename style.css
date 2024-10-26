@@ -12,7 +12,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 10px;
 }
 
 .clock-title h1 {
@@ -37,6 +38,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .clock-dial {
@@ -57,7 +59,6 @@ body {
 }
 
 .hours-circle {
-  /* border-color: #ff2972; */
   border-color: #444;
 }
 
@@ -66,7 +67,6 @@ body {
 }
 
 .seconds-circle {
-  /* border-color: #04fc43; */
   border-color: #444;
 }
 
@@ -89,7 +89,6 @@ body {
   font-weight: 700;
 }
 
-/* Conic gradients for circle fill */
 #hours-circle {
   background: conic-gradient(#444 0deg, #ff2972 0deg);
 }
@@ -107,4 +106,57 @@ body {
   font-weight: bold;
   margin-left: 10px;
   color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .clock-title h1 {
+    font-size: 1.5em;
+  }
+
+  .clock-container {
+    gap: 20px;
+    flex-direction: column; 
+  }
+
+  .clock-dial {
+    width: 180px; 
+    height: 180px;
+  }
+
+  .time {
+    font-size: 2em; 
+  }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .period {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock-title h1 {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+  }
+
+  .clock-dial {
+    width: 200px;
+    height: 200px;
+  }
+
+  .time {
+    font-size: 2.2em;
+  }
+
+  .label {
+    font-size: 1em;
+  }
+
+  .period {
+    font-size: 1.5em;
+  }
 }
